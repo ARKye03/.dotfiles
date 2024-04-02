@@ -112,13 +112,11 @@
     dotnet-sdk_8
     neovim
     docker
-    fastfetch
     riseup-vpn
     networkmanagerapplet
     git
     nodejs
     ntfs3g
-    rustup
     gnumake
     gcc
     ffmpeg
