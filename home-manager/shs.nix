@@ -9,7 +9,7 @@ let
     lvhom = "lvim /home/nixarkye/.config/home-manager/home.nix";
     gc = "git clone";
     codenix = "code /home/nixarkye/.dotfiles";
-    
+
     #.Net Aliases
     dn = "dotnet new";
     dr = "dotnet run";
