@@ -4,7 +4,6 @@ let
 in
 {
   home.packages = with pkgs; [
-    protonvpn-cli
     microsoft-edge
     discord
     telegram-desktop
@@ -25,6 +24,7 @@ in
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
+    unstable.protonvpn-gui
     gnome.gnome-tweaks
     openvpn
     python3
