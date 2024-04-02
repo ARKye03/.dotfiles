@@ -18,7 +18,6 @@
     cava
     btop
     rustup
-    python3
     uget-integrator
     nil
     nixpkgs-fmt
