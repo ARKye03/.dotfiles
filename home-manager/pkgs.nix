@@ -1,4 +1,7 @@
 { pkgs, ... }:
+let
+  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+in
 {
   home.packages = with pkgs; [
     protonvpn-cli
@@ -21,7 +24,7 @@
     uget-integrator
     nil
     nixpkgs-fmt
-    vscode-fhs
+    unstable.vscode-fhs
     gnome.gnome-tweaks
     openvpn
     python3
