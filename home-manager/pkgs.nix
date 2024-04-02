@@ -1,22 +1,30 @@
 { pkgs, ... }:
 {
-  home.packages = [
-    pkgs.protonvpn-cli
-    pkgs.microsoft-edge
-    pkgs.discord
-    pkgs.telegram-desktop
-    pkgs.gnome-browser-connector
-    pkgs.fastfetch
-    pkgs.geogebra
-    pkgs.celluloid
-    pkgs.libreoffice
-    pkgs.gh
-    pkgs.kitty
-    pkgs.uget
-    pkgs.ocs-url
-    pkgs.tgpt
-    pkgs.cava
-    pkgs.btop
-    pkgs.warp-terminal
+  home.packages = with pkgs; [
+    protonvpn-cli
+    microsoft-edge
+    discord
+    telegram-desktop
+    gnome-browser-connector
+    fastfetch
+    geogebra
+    celluloid
+    libreoffice
+    gh
+    kitty
+    uget
+    ocs-url
+    tgpt
+    cava
+    btop
+    rustup
+    python3
+    uget-integrator
+    nil
+    nixpkgs-fmt
+    vscode-fhs
+    gnome.gnome-tweaks
+    openvpn
+    python3
   ];
 }
