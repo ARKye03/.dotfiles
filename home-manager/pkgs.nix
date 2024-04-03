@@ -24,7 +24,6 @@ in
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
-    unstable.protonvpn-gui
     gnome.gnome-tweaks
     openvpn
     python3
