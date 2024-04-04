@@ -8,6 +8,8 @@ in
     discord
     telegram-desktop
     gnome-browser-connector
+    gnomeExtensions.nauta-connect
+    gnomeExtensions.arcmenu
     fastfetch
     geogebra
     celluloid
