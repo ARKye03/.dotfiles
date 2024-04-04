@@ -21,6 +21,7 @@ in
     btop
     rustup
     uget-integrator
+    networkmanager-openvpn
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
