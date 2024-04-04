@@ -14,6 +14,7 @@ let
     battery-indicator-icon
     clipboard-indicator
     tiling-assistant
+    color-picker
   ];
 in
 {
