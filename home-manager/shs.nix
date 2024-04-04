@@ -1,4 +1,4 @@
-{ config, ... }:
+{ pkgs, config, ... }:
 
 let
   shellAliases = {
@@ -36,15 +36,15 @@ in
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
     };
-    oh-my-zsh = {
-      enable = true;
-      theme = "robbyrussell";
-      plugins = [ "git" ];
-    };
   };
   programs.bash = {
     enable = true;
     enableCompletion = true;
     shellAliases = shellAliases;
+  };
+  programs.starship = {
+    enable = true;
+    # Configuration written to ~/.config/starship.toml
+    settings = pkgs.lib.importTOML ./extra/starship.toml;
   };
 }
