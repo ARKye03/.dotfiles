@@ -1,6 +1,20 @@
 { pkgs, ... }:
 let
   unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+
+  gnomeExtensions = with pkgs.gnomeExtensions; [
+    nauta-connect
+    arcmenu
+    forge
+    dash-to-dock
+    caffeine
+    grand-theft-focus
+    blur-my-shell
+    media-controls
+    battery-indicator-icon
+    clipboard-indicator
+    tiling-assistant
+  ];
 in
 {
   home.packages = with pkgs; [
@@ -8,8 +22,6 @@ in
     discord
     telegram-desktop
     gnome-browser-connector
-    gnomeExtensions.nauta-connect
-    gnomeExtensions.arcmenu
     fastfetch
     geogebra
     celluloid
@@ -30,5 +42,5 @@ in
     gnome.gnome-tweaks
     openvpn
     python3
-  ];
+  ] ++ gnomeExtensions;
 }
