@@ -3,6 +3,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+export NIXOS_LABEL="$1"
 sudo nixos-rebuild switch
 
 if [ $? -ne 0 ]; then
