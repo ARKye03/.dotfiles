@@ -1,7 +1,4 @@
 { pkgs, ... }:
-let
-  unstable = import <nixos-unstable> { };
-in
 {
   imports =
     [
@@ -44,18 +41,8 @@ in
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  #services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.gnome.enable = true;
-
-  services.xserver.displayManager.lightdm.enable = false;
-    programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    package = unstable.hyprland;
-  };
-  programs.waybar = {
-  enable = true;
-  };
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
