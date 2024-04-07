@@ -4,7 +4,7 @@ if [ $# -eq 0 ]; then
 fi
 
 export NIXOS_LABEL="$1"
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch --impure
 
 if [ $? -ne 0 ]; then
   echo "Error rebuilding system"
