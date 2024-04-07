@@ -3,10 +3,11 @@
 let
   shellAliases = {
     ll = "ls -l";
-    nixsu = "sudo nixos-rebuild switch";
-    homsu = "home-manager switch";
-    lvnix = "sudo lvim /etc/nixos/configuration.nix";
-    lvhom = "lvim /home/nixarkye/.config/home-manager/home.nix";
+    nixsu = "/home/nixarkye/.dotfiles/scripts/nixsu.sh";
+    initshell = "/home/nixarkye/.dotfiles/scripts/InitShell.sh";
+    homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
+    homre = "home-manager switch --option substitute false";
+    lvnix = "sudo lvim /home/nixarkye/.dotfiles";
     gc = "git clone";
     codenix = "code /home/nixarkye/.dotfiles";
 
