@@ -17,6 +17,6 @@ else
   echo "$gen_name" > /home/nixarkye/.dotfiles/generation
   echo "$(date)" >> /home/nixarkye/.dotfiles/generation
   
-  git add -A
+  git add configuration.nix generation
   git commit -m "Nix Generation: $gen_name"
 fi
