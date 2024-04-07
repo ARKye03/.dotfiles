@@ -7,7 +7,7 @@ else
 fi
 
 export NIXOS_LABEL="$home_gen_name"
-sudo home-manager switch --impure
+home-manager switch --impure
 
 if [ $? -ne 0 ]; then
   echo "Error rebuilding home"
