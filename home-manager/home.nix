@@ -11,8 +11,7 @@
 
   home.stateVersion = "23.11";
 
-  home.file = {
-  };
+  home.file = { };
 
   home.sessionPath = [
     "${config.home.homeDirectory}/.local/bin"

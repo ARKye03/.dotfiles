@@ -106,7 +106,6 @@
     fira-code-symbols
     fira-code-nerdfont
   ];
-
   nix.settings.experimental-features = [ "nix-command" ];
 
   system.stateVersion = "23.11";
