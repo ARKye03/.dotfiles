@@ -1,12 +1,28 @@
 { pkgs, ... }:
 let
   unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+
+  gnomeExtensions = with pkgs.gnomeExtensions; [
+    nauta-connect
+    arcmenu
+    forge
+    dash-to-dock
+    caffeine
+    grand-theft-focus
+    blur-my-shell
+    media-controls
+    battery-indicator-icon
+    clipboard-indicator
+    tiling-assistant
+    color-picker
+  ];
 in
 {
   home.packages = with pkgs; [
     microsoft-edge
     discord
     telegram-desktop
+    gnome-browser-connector
     fastfetch
     geogebra
     celluloid
@@ -24,10 +40,8 @@ in
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
+    gnome.gnome-tweaks
     openvpn
     python3
-    xfce.thunar 
-    copyq
-    wofi
-  ];
+  ] ++ gnomeExtensions;
 }
