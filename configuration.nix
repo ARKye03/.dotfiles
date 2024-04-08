@@ -70,7 +70,7 @@
   users.users.nixarkye = {
     isNormalUser = true;
     description = "nixarkye";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       firefox
     ];
@@ -100,9 +100,15 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" ];
-  
-  virtualisation.docker.enable = true;
-  
+
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
