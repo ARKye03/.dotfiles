@@ -44,5 +44,7 @@ in
     gnome.gnome-tweaks
     openvpn
     python3
+    bun
+    nodePackages.pnpm
   ] ++ gnomeExtensions;
 }
