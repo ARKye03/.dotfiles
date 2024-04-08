@@ -9,6 +9,18 @@ let
     homre = "home-manager switch --option substitute false";
     lvnix = "sudo lvim /home/nixarkye/.dotfiles";
     gc = "git clone";
+    gs = "git status";
+    ga = "git add";
+    gaa = "git add .";
+    gcm = "git commit -m";
+    gco = "git checkout";
+    gcb = "git checkout -b";
+    gbr = "git branch";
+    gbd = "git branch -d";
+    gpl = "git pull";
+    gps = "git push";
+    gplm = "git pull origin main";
+    gpsm = "git push origin main";
     codenix = "code /home/nixarkye/.dotfiles";
 
     #.Net Aliases
