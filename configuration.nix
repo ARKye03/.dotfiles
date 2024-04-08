@@ -73,14 +73,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
-      neo-cowsay
     ];
-  };
-
-  nixpkgs.config.allowUnfree = true;
-
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
   };
 
   environment.systemPackages = with pkgs; [
@@ -89,7 +82,6 @@
     htop
     dotnet-sdk_8
     neovim
-    docker
     riseup-vpn
     networkmanagerapplet
     git
@@ -106,7 +98,14 @@
     fira-code-symbols
     fira-code-nerdfont
   ];
+
   nix.settings.experimental-features = [ "nix-command" ];
+  
+  virtualisation.docker.enable = true;
+  
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
 
   system.stateVersion = "23.11";
 }
