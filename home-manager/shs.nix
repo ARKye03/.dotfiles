@@ -49,6 +49,21 @@ in
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
     };
+    initExtra = ''
+      # pnpm
+      export PNPM_HOME="/home/archkye/.local/share/pnpm"
+      case ":$PATH:" in
+        *":$PNPM_HOME:"*) ;;
+        *) export PATH="$PNPM_HOME:$PATH" ;;
+      esac
+      # pnpm end
+
+      bindkey '^[[1;5C' forward-word  # Ctrl + Right
+      bindkey '^[[1;5D' backward-word  # Ctrl + Left
+      bindkey '^H' backward-kill-word # Ctrl + Backspace
+      bindkey "^L" clear-screen # Ctrl + L
+
+    '';
   };
   programs.bash = {
     enable = true;
