@@ -18,6 +18,6 @@ else
   echo "$(date)" >> /home/nixarkye/.dotfiles/home-manager/home-generation
   
   cd /home/nixarkye/.dotfiles/
-  git add home/manager
+  git add home-manager/
   git commit -m "Home Generation: $home_gen_name"
 fi
