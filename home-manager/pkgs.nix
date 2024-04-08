@@ -40,6 +40,7 @@ in
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
+    unstable.unityhub
     gnome.gnome-tweaks
     openvpn
     python3
