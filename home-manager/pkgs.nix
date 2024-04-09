@@ -41,6 +41,7 @@ in
     nixpkgs-fmt
     unstable.vscode-fhs
     unstable.unityhub
+    jetbrains.ruby-mine
     gnome.gnome-tweaks
     openvpn
     python3
