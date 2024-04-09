@@ -71,8 +71,8 @@
     isNormalUser = true;
     description = "nixarkye";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
-    packages = with pkgs; [
-      firefox
+    packages = [
+    pkgs.firefox
     ];
   };
 
@@ -98,6 +98,8 @@
     fira-code-symbols
     fira-code-nerdfont
   ];
+
+  services.gnome.gnome-browser-connector.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" ];
 
