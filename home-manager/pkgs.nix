@@ -25,7 +25,7 @@ in
     gnome-browser-connector
     fastfetch
     geogebra
-    celluloid
+    vlc
     libreoffice
     gh
     kitty
