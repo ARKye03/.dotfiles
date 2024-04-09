@@ -34,6 +34,8 @@ in
     tgpt
     cava
     btop
+    tldr
+    fd
     rustup
     uget-integrator
     networkmanager-openvpn
