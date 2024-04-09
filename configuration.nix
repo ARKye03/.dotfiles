@@ -99,8 +99,6 @@
     fira-code-nerdfont
   ];
 
-  services.gnome.gnome-browser-connector.enable = true;
-
   nix.settings.experimental-features = [ "nix-command" ];
 
   virtualisation.docker = {
