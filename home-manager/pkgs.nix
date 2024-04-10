@@ -49,5 +49,6 @@ in
     python3
     bun
     nodePackages.pnpm
+    distrobox
   ] ++ gnomeExtensions;
 }
