@@ -19,18 +19,29 @@ let
 in
 {
   home.packages = with pkgs; [
+    # Web Browsers
     microsoft-edge
+    gnome-browser-connector
+
+    # Communication
     discord
     telegram-desktop
-    gnome-browser-connector
-    fastfetch
-    geogebra
-    vlc
+
+    # Productivity
     libreoffice
     gh
     kitty
-    uget
     ocs-url
+    jetbrains.ruby-mine
+    gnome.gnome-tweaks
+
+    # Media
+    vlc
+    geogebra
+
+    # System Utilities
+    fastfetch
+    uget
     tgpt
     cava
     btop
@@ -43,12 +54,12 @@ in
     nixpkgs-fmt
     unstable.vscode-fhs
     unstable.unityhub
-    jetbrains.ruby-mine
-    gnome.gnome-tweaks
     openvpn
     python3
     bun
     nodePackages.pnpm
-    distrobox
+    unstable.distrobox
+
+    # GNOME Extensions
   ] ++ gnomeExtensions;
 }
