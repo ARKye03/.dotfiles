@@ -73,6 +73,7 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = [
     pkgs.firefox
+    pkgs.cowsay
     ];
   };
 
