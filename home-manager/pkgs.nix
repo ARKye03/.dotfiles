@@ -58,6 +58,7 @@ in
     python3
     bun
     nodePackages.pnpm
+    unstable.distrobox
 
     # GNOME Extensions
   ] ++ gnomeExtensions;
