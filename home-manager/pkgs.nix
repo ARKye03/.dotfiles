@@ -36,6 +36,7 @@ in
     gnome.gnome-tweaks
 
     # Media
+    celluloid
     vlc
     geogebra
 
