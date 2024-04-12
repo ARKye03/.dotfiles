@@ -92,6 +92,7 @@
     gcc
     ffmpeg
     nmap
+    wineWowPackages.stable
   ];
 
   fonts.packages = with pkgs; [
