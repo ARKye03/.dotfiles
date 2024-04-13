@@ -3,6 +3,9 @@
 let
   shellAliases = {
     ll = "ls -l";
+    ns = "nix-shell";
+    ne = "nix-env";
+    nst = "nix-store";
     nixsu = "/home/nixarkye/.dotfiles/scripts/nixsu.sh";
     initshell = "/home/nixarkye/.dotfiles/scripts/InitShell.sh";
     homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
@@ -76,6 +79,5 @@ in
       # Configuration written to ~/.config/starship.toml
       settings = pkgs.lib.importTOML ./extra/starship.toml;
     };
-
   };
 }
