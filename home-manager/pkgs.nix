@@ -33,6 +33,7 @@ in
     kitty
     ocs-url
     gnome.gnome-tweaks
+    lunarvim
 
     # Media
     celluloid
