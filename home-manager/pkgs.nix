@@ -41,8 +41,7 @@ in
     geogebra
 
     #Rust-lang
-    rustc
-    cargo
+    rustup
 
     # System Utilities
     fastfetch
