@@ -16,7 +16,16 @@
   home.sessionPath = [
     "${config.home.homeDirectory}/.local/bin"
     "${config.home.homeDirectory}/.cargo/bin"
+    "${config.home.homeDirectory}/.venv/bin"
   ];
+  
+  programs ={
+  # Better `cd`
+  bat.enable = true;
+  # Type `z <pat>` to cd to some directory
+  zoxide.enable = true;
 
-  programs.home-manager.enable = true;
+  fzf.enable = true;
+
+  home-manager.enable = true;};
 }

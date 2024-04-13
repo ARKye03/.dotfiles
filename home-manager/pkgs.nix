@@ -32,7 +32,6 @@ in
     gh
     kitty
     ocs-url
-    jetbrains.ruby-mine
     gnome.gnome-tweaks
 
     # Media

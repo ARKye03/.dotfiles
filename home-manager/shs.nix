@@ -70,6 +70,7 @@ in
     enableCompletion = true;
     shellAliases = shellAliases;
   };
+
   programs.starship = {
     enable = true;
     # Configuration written to ~/.config/starship.toml
