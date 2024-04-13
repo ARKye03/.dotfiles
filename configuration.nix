@@ -16,7 +16,12 @@
   # Enable networking
   networking.networkmanager.enable = true;
   #ZSH
-  programs.zsh.enable = true;
+  programs = {
+  zsh.enable = true;
+  git = {
+  enable = true;
+  };
+  };
   users.defaultUserShell = pkgs.zsh;
 
   # Set your time zone.
@@ -81,8 +86,6 @@
     wget
     htop
     dotnet-sdk_8
-    networkmanagerapplet
-    git
     nodejs
     ntfs3g
     gnumake
