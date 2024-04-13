@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
 else
   gen_name=$1
 fi
-
+gen_name="$(date +%d-%m-%Y_%H)_${gen_name}"
 export NIXOS_LABEL="$gen_name"
 sudo nixos-rebuild switch -p "$gen_name"
 
