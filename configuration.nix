@@ -17,10 +17,10 @@
   networking.networkmanager.enable = true;
   #ZSH
   programs = {
-  zsh.enable = true;
-  git = {
-  enable = true;
-  };
+    zsh.enable = true;
+    git = {
+      enable = true;
+    };
   };
   users.defaultUserShell = pkgs.zsh;
 
