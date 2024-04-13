@@ -15,12 +15,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  #ZSH
+
   programs = {
     zsh.enable = true;
-    git = {
-      enable = true;
-    };
+    git.enable = true;
+    htop.enable = true;
   };
   users.defaultUserShell = pkgs.zsh;
 
@@ -84,7 +83,6 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
-    htop
     dotnet-sdk_8
     nodejs
     ntfs3g
