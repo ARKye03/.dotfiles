@@ -38,42 +38,44 @@ let
   };
 in
 {
-  programs.zsh = {
-    enable = true;
-    syntaxHighlighting.enable = true;
-    enableAutosuggestions = true;
-    enableCompletion = true;
-    shellAliases = shellAliases;
-    history = {
-      ignoreDups = true;
-      size = 10000;
-      path = "${config.xdg.dataHome}/zsh/history";
+  programs = {
+    zsh = {
+      enable = true;
+      syntaxHighlighting.enable = true;
+      enableAutosuggestions = true;
+      enableCompletion = true;
+      shellAliases = shellAliases;
+      history = {
+        ignoreDups = true;
+        size = 10000;
+        path = "${config.xdg.dataHome}/zsh/history";
+      };
+      initExtra = ''
+        # pnpm
+        export PNPM_HOME="/home/archkye/.local/share/pnpm"
+        case ":$PATH:" in
+          *":$PNPM_HOME:"*) ;;
+          *) export PATH="$PNPM_HOME:$PATH" ;;
+        esac
+        # pnpm end
+
+        bindkey '^[[1;5C' forward-word  # Ctrl + Right
+        bindkey '^[[1;5D' backward-word  # Ctrl + Left
+        bindkey '^H' backward-kill-word # Ctrl + Backspace
+        bindkey "^L" clear-screen # Ctrl + L
+
+      '';
     };
-    initExtra = ''
-      # pnpm
-      export PNPM_HOME="/home/archkye/.local/share/pnpm"
-      case ":$PATH:" in
-        *":$PNPM_HOME:"*) ;;
-        *) export PATH="$PNPM_HOME:$PATH" ;;
-      esac
-      # pnpm end
+    bash = {
+      enable = true;
+      enableCompletion = true;
+      shellAliases = shellAliases;
+    };
+    starship = {
+      enable = true;
+      # Configuration written to ~/.config/starship.toml
+      settings = pkgs.lib.importTOML ./extra/starship.toml;
+    };
 
-      bindkey '^[[1;5C' forward-word  # Ctrl + Right
-      bindkey '^[[1;5D' backward-word  # Ctrl + Left
-      bindkey '^H' backward-kill-word # Ctrl + Backspace
-      bindkey "^L" clear-screen # Ctrl + L
-
-    '';
-  };
-  programs.bash = {
-    enable = true;
-    enableCompletion = true;
-    shellAliases = shellAliases;
-  };
-
-  programs.starship = {
-    enable = true;
-    # Configuration written to ~/.config/starship.toml
-    settings = pkgs.lib.importTOML ./extra/starship.toml;
   };
 }
