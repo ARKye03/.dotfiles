@@ -7,7 +7,7 @@ else
 fi
 
 export NIXOS_LABEL="$gen_name"
-sudo nixos-rebuild switch --impure
+sudo nixos-rebuild switch -p "$gen_name"
 
 if [ $? -ne 0 ]; then
   echo "Error rebuilding system"
