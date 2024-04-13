@@ -48,7 +48,6 @@ in
     btop
     tldr
     fd
-    rustup
     uget-integrator
     networkmanager-openvpn
     nil
