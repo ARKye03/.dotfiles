@@ -73,7 +73,6 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = [
     pkgs.firefox
-    pkgs.cowsay
     ];
   };
 
@@ -82,8 +81,6 @@
     wget
     htop
     dotnet-sdk_8
-    neovim
-    riseup-vpn
     networkmanagerapplet
     git
     nodejs
