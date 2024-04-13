@@ -48,6 +48,7 @@ in
     btop
     tldr
     fd
+    ripgrep
     uget-integrator
     networkmanager-openvpn
     nil
