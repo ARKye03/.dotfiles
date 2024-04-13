@@ -40,6 +40,10 @@ in
     vlc
     geogebra
 
+    #Rust-lang
+    rustc
+    cargo
+
     # System Utilities
     fastfetch
     uget
