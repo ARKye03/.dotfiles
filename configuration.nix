@@ -72,7 +72,7 @@
     description = "nixarkye";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = [
-    pkgs.firefox
+      pkgs.firefox
     ];
   };
 
