@@ -15,6 +15,8 @@ let
     clipboard-indicator
     tiling-assistant
     color-picker
+    tray-icons-reloaded
+    gsconnect
   ];
 in
 {
