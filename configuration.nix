@@ -20,6 +20,7 @@
     zsh.enable = true;
     git.enable = true;
     htop.enable = true;
+    kdeconnect.enable = true;
   };
   users.defaultUserShell = pkgs.zsh;
 
