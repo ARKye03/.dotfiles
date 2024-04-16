@@ -77,7 +77,6 @@
     description = "nixarkye";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = [
-      pkgs.firefox
     ];
   };
 
@@ -100,7 +99,7 @@
     fira-code-nerdfont
   ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   virtualisation.docker = {
     enable = true;
