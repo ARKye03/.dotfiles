@@ -100,7 +100,7 @@
     fira-code-nerdfont
   ];
 
-  nix.settings.experimental-features = [ "nix-command" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   virtualisation.docker = {
     enable = true;
