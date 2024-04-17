@@ -33,7 +33,7 @@ in
     # Productivity
     libreoffice
     gh
-    unstable.kitty
+    kitty
     ocs-url
     gnome.gnome-tweaks
     lunarvim
