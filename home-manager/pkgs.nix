@@ -33,7 +33,7 @@ in
     # Productivity
     libreoffice
     gh
-    kitty
+    unstable.kitty
     ocs-url
     gnome.gnome-tweaks
     lunarvim
@@ -60,7 +60,7 @@ in
     nil
     nixpkgs-fmt
     unstable.vscode-fhs
-    unstable.unityhub
+    # unstable.unityhub
     openvpn
     python3
     bun
