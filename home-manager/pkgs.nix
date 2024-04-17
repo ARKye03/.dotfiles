@@ -3,7 +3,6 @@ let
   unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
 
   gnomeExtensions = with pkgs.gnomeExtensions; [
-    nauta-connect
     arcmenu
     forge
     dash-to-dock
