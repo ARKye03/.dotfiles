@@ -12,6 +12,7 @@
   home.stateVersion = "23.11";
 
   home.file = { };
+  nixpkgs.config.allowUnfree = true;
 
   home.sessionPath = [
     "${config.home.homeDirectory}/.local/bin"
