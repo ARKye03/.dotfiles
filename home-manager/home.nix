@@ -18,6 +18,7 @@
     "${config.home.homeDirectory}/.local/bin"
     "${config.home.homeDirectory}/.cargo/bin"
     "${config.home.homeDirectory}/.venv/bin"
+    "${config.home.homeDirectory}/.local/share/gem/ruby/3.1.0/bin"
   ];
 
   programs = {
