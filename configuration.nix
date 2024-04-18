@@ -111,6 +111,7 @@
 
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
+    API_KEY = "sk-lsjiwh2df";
   };
 
   system.stateVersion = "23.11";
