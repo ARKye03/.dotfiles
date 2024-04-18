@@ -42,6 +42,7 @@ in
 
     #Rust-lang
     rustup
+    ruby
 
     # System Utilities
     fastfetch
