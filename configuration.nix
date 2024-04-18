@@ -97,6 +97,8 @@
     fira-code
     fira-code-symbols
     fira-code-nerdfont
+    noto-fonts
+
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
