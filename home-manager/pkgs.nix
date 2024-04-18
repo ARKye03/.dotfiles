@@ -14,6 +14,7 @@ let
     color-picker
     tray-icons-reloaded
     gsconnect
+    transparent-window-moving
   ];
 in
 {
