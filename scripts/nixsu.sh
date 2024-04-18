@@ -7,7 +7,7 @@ else
 fi
 gen_name="$(date +%d-%m-%Y_%H)_${gen_name}"
 export NIXOS_LABEL="$gen_name"
-sudo nixos-rebuild switch -p "$gen_name"
+sudo nixos-rebuild switch
 
 if [ $? -ne 0 ]; then
   echo "Error rebuilding system"
