@@ -1,7 +1,5 @@
 { pkgs, ... }:
 let
-  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
-
   gnomeExtensions = with pkgs.gnomeExtensions; [
     arcmenu
     forge
@@ -21,7 +19,6 @@ in
 {
   home.packages = with pkgs; [
     # Web Browsers
-    microsoft-edge
     gnome-browser-connector
 
     # Communication
@@ -54,11 +51,10 @@ in
     tldr
     fd
     ripgrep
-    uget-integrator
     networkmanager-openvpn
     nil
     nixpkgs-fmt
-    unstable.vscode-fhs
+    vscode-fhs
     # unstable.unityhub
     openvpn
     python3
