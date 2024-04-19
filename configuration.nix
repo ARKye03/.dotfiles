@@ -84,7 +84,6 @@
     vim
     wget
     dotnet-sdk_8
-    nodejs
     ntfs3g
     gnumake
     gcc
