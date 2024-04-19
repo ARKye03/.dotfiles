@@ -59,8 +59,6 @@ in
     # unstable.unityhub
     openvpn
     python3
-    bun
-    nodePackages.pnpm
 
     # GNOME Extensions
   ] ++ gnomeExtensions;
