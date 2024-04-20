@@ -39,8 +39,10 @@ in
     celluloid
     vlc
     geogebra
-    g4music
     amberol
+    
+    # Gaming
+    osu-lazer-bin
 
     #Rust-lang
     rustup
