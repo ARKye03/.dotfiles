@@ -41,9 +41,6 @@ in
     geogebra
     g4music
 
-    # Gaming
-    osu-lazer-bin
-
     #Rust-lang
     rustup
 
