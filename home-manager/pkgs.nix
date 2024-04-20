@@ -40,6 +40,9 @@ in
     vlc
     geogebra
 
+    # Gaming
+    osu-lazer-bin
+
     #Rust-lang
     rustup
 
