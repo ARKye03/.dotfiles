@@ -39,7 +39,6 @@ in
     celluloid
     vlc
     geogebra
-    amberol
     g4music
 
     # Gaming
