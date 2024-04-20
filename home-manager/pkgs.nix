@@ -40,6 +40,7 @@ in
     vlc
     geogebra
     g4music
+    amberol
 
     #Rust-lang
     rustup
