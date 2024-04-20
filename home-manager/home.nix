@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   imports = [
     ./shs.nix
@@ -27,6 +27,10 @@
     fzf.enable = true;
     chromium.enable = true;
     firefox.enable = true;
+    vscode = {
+      enable = true;
+      package = pkgs.vscode.fhs;
+    };
     direnv = {
       enable = true;
       enableBashIntegration = true;

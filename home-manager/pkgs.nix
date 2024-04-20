@@ -55,7 +55,6 @@ in
     networkmanager-openvpn
     nil
     nixpkgs-fmt
-    vscode-fhs
     # unstable.unityhub
     openvpn
     python3
