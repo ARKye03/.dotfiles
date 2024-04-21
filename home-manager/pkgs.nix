@@ -1,27 +1,6 @@
 { pkgs, ... }:
-let
-  gnomeExtensions = with pkgs.gnomeExtensions; [
-    arcmenu
-    forge
-    dash-to-dock
-    caffeine
-    grand-theft-focus
-    blur-my-shell
-    media-controls
-    battery-indicator-icon
-    clipboard-indicator
-    tiling-assistant
-    color-picker
-    tray-icons-reloaded
-    gsconnect
-    transparent-window-moving
-  ];
-in
 {
   home.packages = with pkgs; [
-    # Web Browsers
-    gnome-browser-connector
-
     # Communication
     discord
     telegram-desktop
@@ -31,15 +10,12 @@ in
     libreoffice
     gh
     kitty
-    ocs-url
-    gnome.gnome-tweaks
     lunarvim
 
     # Media
     celluloid
     vlc
     geogebra
-    amberol
     
     # Gaming
     osu-lazer-bin
@@ -59,10 +35,8 @@ in
     networkmanager-openvpn
     nil
     nixpkgs-fmt
-    # unstable.unityhub
     openvpn
     python3
 
-    # GNOME Extensions
-  ] ++ gnomeExtensions;
+  ];
 }
