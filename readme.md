@@ -37,6 +37,8 @@ sudo ln -s ~/.dotfiles/configuration.nix /etc/nixos/configuration.nix
 sudo ln -s ~/.dotfiles/flake.nix /etc/nixos/flake.nix
 ```
 
+Link Home Manager configuration:
+
 ```sh
 ln -s ~/.dotfiles/home-manager/ ~/.config/home-manager/
 ```
