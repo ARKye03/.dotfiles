@@ -57,12 +57,15 @@ in
     tldr
     fd
     ripgrep
-    networkmanager-openvpn
     nil
     nixpkgs-fmt
     # unstable.unityhub
-    openvpn
     python3
+
+    # VPN Stuff
+    networkmanager-openvpn
+    openvpn
+    protonvpn-gui
 
     # GNOME Extensions
   ] ++ gnomeExtensions;
