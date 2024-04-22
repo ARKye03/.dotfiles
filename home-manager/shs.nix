@@ -10,7 +10,7 @@ let
     initshell = "/home/nixarkye/.dotfiles/scripts/InitShell.sh";
     homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
     homre = "home-manager switch --option substitute false";
-    lvnix = "sudo lvim /home/nixarkye/.dotfiles";
+    lvnix = "lvim /home/nixarkye/.dotfiles";
     gc = "git clone";
     gs = "git status";
     ga = "git add";
