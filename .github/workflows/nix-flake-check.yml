@@ -1,0 +1,26 @@
+on:
+  pull_request:
+  push:
+    branches: [trunk]
+
+jobs:
+  build:
+    name: Build Nix targets
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Nix Flake Checker
+        uses: DeterminateSystems/flake-checker-action@v5
+        with:
+          flake-lock-path: ./flake.lock
+          check-outdated: true
+          check-owner: true
+          check-supported: true
+          nixpkgs-keys: nixpkgs
+          ignore-missing-flake-lock: false
+          fail-mode: true
+          send-statistics: true
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v3
+      - name: Build default package
+        run: nix build
