@@ -54,5 +54,5 @@ If you have any suggestions or improvements, feel free to open an issue or a pul
 
 ## Credits
 
-- [NixOS Wiki](https://nixos.wiki/wiki/Flakes)
+- [NixOS Wiki](https://nixos.wiki)
 - [Home Manager](https://github.com/nix-community/home-manager)
