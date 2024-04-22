@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # YET the action works
   imports =
     [
       ./hardware-configuration.nix
