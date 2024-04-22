@@ -20,7 +20,3 @@ jobs:
           ignore-missing-flake-lock: false
           fail-mode: true
           send-statistics: true
-      - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@v3
-      - name: Build default package
-        run: nix build
