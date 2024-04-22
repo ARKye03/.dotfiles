@@ -33,6 +33,7 @@ in
     gh
     kitty
     ocs-url
+    obsidian
     lunarvim
 
     # Media
