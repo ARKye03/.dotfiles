@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-# The symlink works greats
   imports =
     [
       ./hardware-configuration.nix
