@@ -9,7 +9,6 @@
     # Productivity
     libreoffice
     gh
-    kitty
     ocs-url
     obsidian
     lunarvim

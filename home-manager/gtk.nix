@@ -14,7 +14,10 @@
         variant = "mocha";
       };
     };
-    cursorTheme.name = "Colloid-dark-cursors";
+    cursorTheme = {
+      package = pkgs.catppuccin-cursors.mochaDark;
+      name = "Catppuccin-Mocha-Dark-Cursors";
+    };
     iconTheme.name = "Colloid-dark";
   };
   # Now symlink the `~/.config/gtk-4.0/` folder declaratively:
