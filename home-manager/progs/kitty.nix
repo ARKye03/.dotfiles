@@ -16,7 +16,7 @@
       open_url_with = "default";
       detect_url = true;
       draw_minimal_borders = true;
-      background_opacity = "0.95";
+      background_opacity = "0.98";
     };
   };
 }
