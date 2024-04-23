@@ -27,6 +27,7 @@
     fzf.enable = true;
     chromium.enable = true;
     firefox.enable = true;
+    cava.enable = true;
     vscode = {
       enable = true;
       package = pkgs.vscode.fhs;

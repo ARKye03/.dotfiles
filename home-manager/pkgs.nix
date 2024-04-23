@@ -52,7 +52,6 @@ in
     fastfetch
     uget
     tgpt
-    cava
     btop
     tldr
     fd
