@@ -1,28 +1,6 @@
 { pkgs, ... }:
-let
-  gnomeExtensions = with pkgs.gnomeExtensions; [
-    arcmenu
-    forge
-    dash-to-dock
-    caffeine
-    grand-theft-focus
-    blur-my-shell
-    media-controls
-    battery-indicator-icon
-    clipboard-indicator
-    tiling-assistant
-    color-picker
-    tray-icons-reloaded
-    gsconnect
-    transparent-window-moving
-  ];
-in
 {
   home.packages = with pkgs; [
-    # GnomeShits
-    gnome-browser-connector
-    gnome.gnome-tweaks
-
     # Communication
     discord
     telegram-desktop
@@ -40,7 +18,6 @@ in
     celluloid
     vlc
     geogebra
-    amberol
 
     # Gaming
     osu-lazer-bin
@@ -66,6 +43,5 @@ in
     openvpn
     protonvpn-gui
 
-    # GNOME Extensions
-  ] ++ gnomeExtensions;
+  ];
 }
