@@ -21,8 +21,10 @@
     # Gaming
     osu-lazer-bin
 
-    #Rust-lang
+    #Main-langs
     rustup
+    nil
+    nixpkgs-fmt
 
     # System Utilities
     fastfetch
@@ -32,8 +34,6 @@
     tldr
     fd
     ripgrep
-    nil
-    nixpkgs-fmt
     # unstable.unityhub
     python3
 
@@ -41,6 +41,5 @@
     networkmanager-openvpn
     openvpn
     protonvpn-gui
-
   ];
 }
