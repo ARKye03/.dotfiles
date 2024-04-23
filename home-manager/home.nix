@@ -4,7 +4,7 @@
     ./shs.nix
     ./pkgs.nix
     ./gnome.nix
-    ./gtk.nix
+    # ./gtk.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.

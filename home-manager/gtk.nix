@@ -3,10 +3,19 @@
 , config
 , ...
 }: {
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+        gtk-theme = "Catppuccin-Mocha-Main";
+      };
+    };
+  };
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      name = "Catppuccin-Mocha-Main";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "mauve" ];
         size = "standard";
