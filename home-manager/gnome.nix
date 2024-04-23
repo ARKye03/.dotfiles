@@ -7,6 +7,14 @@ let
   ];
 in
 {
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/shell/extensions/user-theme" = {
+        name = "Catppuccin-Mocha-Standard-Mauve-Dark";
+      };
+    };
+  };
   home.packages = with pkgs.gnomeExtensions; [
     arcmenu
     forge
