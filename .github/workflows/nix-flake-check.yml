@@ -7,24 +7,6 @@ on:
     - cron: '0 0 * * *'  # Run this workflow every day at 17:00
 
 jobs:
-  build:
-    name: Build Nix targets
-    if: github.event_name != 'schedule'
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: Nix Flake Checker
-        uses: DeterminateSystems/flake-checker-action@v5
-        with:
-          flake-lock-path: ./flake.lock
-          check-outdated: true
-          check-owner: true
-          check-supported: true
-          nixpkgs-keys: nixpkgs
-          ignore-missing-flake-lock: false
-          fail-mode: true
-          send-statistics: true
-
   merge:
     name: Merge DevelopmentTrunk into trunk
     if: github.event_name == 'schedule'
@@ -46,3 +28,21 @@ jobs:
           git fetch origin DevelopmentTrunk
           git merge --no-ff --no-edit origin/DevelopmentTrunk
           git push
+
+  build:
+    name: Build Nix targets
+    needs: merge
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Nix Flake Checker
+        uses: DeterminateSystems/flake-checker-action@v5
+        with:
+          flake-lock-path: ./flake.lock
+          check-outdated: true
+          check-owner: true
+          check-supported: true
+          nixpkgs-keys: nixpkgs
+          ignore-missing-flake-lock: false
+          fail-mode: true
+          send-statistics: true
