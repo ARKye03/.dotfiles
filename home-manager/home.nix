@@ -8,6 +8,7 @@
     ./progs/kitty.nix
     ./progs/vscode.nix
     ./progs/direnv.nix
+    ./progs/cava.nix
   ];
 
   home = {
@@ -30,7 +31,6 @@
     fzf.enable = true;
     chromium.enable = true;
     firefox.enable = true;
-    cava.enable = true;
 
     home-manager.enable = true;
   };
