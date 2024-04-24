@@ -18,7 +18,7 @@
       package = pkgs.catppuccin-cursors.mochaDark;
       name = "Catppuccin-Mocha-Dark-Cursors";
     };
-    iconTheme.name = "Colloid-dark";
+    iconTheme = { name = "Colloid-dark"; package = pkgs.candy-icons; };
   };
   # Now symlink the `~/.config/gtk-4.0/` folder declaratively:
   home.file = {
