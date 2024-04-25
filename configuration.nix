@@ -93,6 +93,7 @@
     nmap
     wineWowPackages.stable
     qemu
+    quickemu
   ];
 
   fonts.packages = with pkgs; [
