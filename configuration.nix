@@ -92,6 +92,7 @@
     ffmpeg
     nmap
     wineWowPackages.stable
+    # qemu
   ];
 
   fonts.packages = with pkgs; [
