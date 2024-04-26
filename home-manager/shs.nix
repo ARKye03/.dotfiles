@@ -4,6 +4,7 @@ let
   shellAliases = {
     ll = "ls -l";
     ns = "nix-shell";
+    ndev = "nix develop";
     ne = "nix-env";
     nst = "nix-store";
     nixsu = "/home/nixarkye/.dotfiles/scripts/nixsu.sh";
@@ -11,6 +12,9 @@ let
     homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
     homre = "home-manager switch --option substitute false";
     lvnix = "lvim /home/nixarkye/.dotfiles";
+    codenix = "code /home/nixarkye/.dotfiles";
+
+    #Git Aliases
     gc = "git clone";
     gs = "git status";
     ga = "git add";
@@ -24,7 +28,6 @@ let
     gps = "git push";
     gplm = "git pull origin main";
     gpsm = "git push origin main";
-    codenix = "code /home/nixarkye/.dotfiles";
 
     #.Net Aliases
     dn = "dotnet new";
@@ -53,7 +56,17 @@ in
         size = 10000;
         path = "${config.xdg.dataHome}/zsh/history";
       };
+      historySubstringSearch = {
+        enable = true;
+        searchDownKey = "^[[B";
+        searchUpKey = "^[[A";
+      };
       initExtra = ''
+        bindkey '^[[1;5C' forward-word  # Ctrl + Right
+        bindkey '^[[1;5D' backward-word  # Ctrl + Left
+        bindkey '^H' backward-kill-word # Ctrl + Backspace
+        bindkey "^L" clear-screen # Ctrl + L
+
         # pnpm
         export PNPM_HOME="/home/archkye/.local/share/pnpm"
         case ":$PATH:" in
@@ -61,12 +74,6 @@ in
           *) export PATH="$PNPM_HOME:$PATH" ;;
         esac
         # pnpm end
-
-        bindkey '^[[1;5C' forward-word  # Ctrl + Right
-        bindkey '^[[1;5D' backward-word  # Ctrl + Left
-        bindkey '^H' backward-kill-word # Ctrl + Backspace
-        bindkey "^L" clear-screen # Ctrl + L
-
       '';
     };
     bash = {
