@@ -6,18 +6,18 @@ else
   home_gen_name=$1
 fi
 
-export NIXOS_LABEL="$home_gen_name"
-home-manager switch --impure
+pushd ~/.dotfiles/home-manager/
+home-manager switch
 
 if [ $? -ne 0 ]; then
   echo "Error rebuilding home"
   exit 1
 else
   echo "Home rebuilt successfully"
-  echo "$home_gen_name" > /home/nixarkye/.dotfiles/home-manager/home-generation
-  echo "$(date)" >> /home/nixarkye/.dotfiles/home-manager/home-generation
+  echo "$home_gen_name" > home-generation
+  echo "$(date)" >> home-generation
   
-  cd /home/nixarkye/.dotfiles/
-  git add home-manager/
+  git add .
   git commit -m "Home Generation: $home_gen_name"
+  popd
 fi
