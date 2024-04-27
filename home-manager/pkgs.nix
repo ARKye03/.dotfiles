@@ -33,7 +33,6 @@
     btop
     tldr
     fd
-    ripgrep
     # unstable.unityhub
     python3
 

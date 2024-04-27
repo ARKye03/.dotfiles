@@ -3,6 +3,7 @@
 
   programs = {
     bat.enable = true;
+    ripgrep.enable = true;
     zoxide.enable = true;
     fzf.enable = true;
     chromium.enable = true;
