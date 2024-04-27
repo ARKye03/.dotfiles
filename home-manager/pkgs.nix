@@ -33,6 +33,7 @@
     btop
     tldr
     fd
+    libnotify
     # unstable.unityhub
     python3
 
