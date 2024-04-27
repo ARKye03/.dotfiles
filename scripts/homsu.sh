@@ -1,3 +1,5 @@
+#! /bin/bash
+
 home_gen_name="Home default"
 
 if [ $# -eq 0 ]; then
@@ -6,18 +8,17 @@ else
   home_gen_name=$1
 fi
 
-pushd ~/.dotfiles/home-manager/
-home-manager switch
+pushd ~/.dotfiles/home-manager/ || exit
 
-if [ $? -ne 0 ]; then
+if ! (home-manager switch | tee home-switch.log >/dev/null); then
   echo "Error rebuilding home"
   exit 1
 else
   echo "Home rebuilt successfully"
   echo "$home_gen_name" > home-generation
-  echo "$(date)" >> home-generation
+  date >> home-generation
   
   git add .
   git commit -m "Home Generation: $home_gen_name"
-  popd
+  popd || exit
 fi
