@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     # Communication
     discord
@@ -21,18 +20,17 @@
     # Gaming
     osu-lazer-bin
 
-    #Main-langs
+    # Langs utils
     rustup
     nil
     nixpkgs-fmt
 
-    # System Utilities
+    # System utils
     fastfetch
     uget
     tgpt
     tldr
     libnotify
-    # unstable.unityhub
     python3
 
     # VPN Stuff

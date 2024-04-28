@@ -10,7 +10,6 @@
     chromium.enable = true;
     firefox.enable = true;
     neovim.enable = true;
-    btop.enable = true;
     yt-dlp.enable = true;
 
     home-manager.enable = true;
