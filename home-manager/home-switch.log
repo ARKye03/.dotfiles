@@ -1,0 +1,28 @@
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating linkGeneration
+Cleaning up orphan links from /home/nixarkye
+No change so reusing latest profile generation 164
+Creating home file links in /home/nixarkye
+Activating batCache
+No themes were found in '/home/nixarkye/.config/bat/themes', using the default set
+No syntaxes were found in '/home/nixarkye/.config/bat/syntaxes', using the default set.
+Writing theme set to /home/nixarkye/.cache/bat/themes.bin ... okay
+Writing syntax set to /home/nixarkye/.cache/bat/syntaxes.bin ... okay
+Writing metadata to folder /home/nixarkye/.cache/bat ... okay
+Activating installPackages
+Activating dconfSettings
+Activating onFilesChange
+Activating reloadSystemd
+The user systemd session is degraded:
+  UNIT                       LOAD   ACTIVE SUB    DESCRIPTION
+● tracker-miner-fs-3.service loaded failed failed Tracker file system data miner
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+1 loaded units listed.
+Attempting to reload services anyway...
