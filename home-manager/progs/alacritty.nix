@@ -9,24 +9,26 @@
           y = 5;
         };
         decorations = "full";
-        opacity = "0.9";
+        opacity = 0.9;
         decorations_theme_variant = "Dark";
       };
       font = {
         normal = {
           family = "FiraCode Nerd Font";
           style = "Regular";
-          size = 12;
         };
         bold = {
           family = "FiraCode Nerd Font";
           style = "Bold";
-          size = 12;
         };
+        size = 12;
       };
       cursor = {
-        shape = "Block";
-        blinking = "Always";
+        style = {
+          shape = "Block";
+          blinking = "Always";
+        };
+        blink_interval = 750;
         unfocused_hollow = true;
       };
       scrolling = {
