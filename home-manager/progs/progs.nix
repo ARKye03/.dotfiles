@@ -9,6 +9,7 @@
     fd.enable = true;
     chromium.enable = true;
     firefox.enable = true;
+    neovim.enable = true;
 
     home-manager.enable = true;
   };
