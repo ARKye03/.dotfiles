@@ -3,7 +3,6 @@
     # Communication
     discord
     telegram-desktop
-    whatsapp-for-linux
 
     # Productivity
     libreoffice
