@@ -30,7 +30,6 @@
     fastfetch
     uget
     tgpt
-    btop
     tldr
     libnotify
     # unstable.unityhub
