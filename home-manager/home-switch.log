@@ -1,0 +1,5 @@
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Existing file '/home/nixarkye/.config/btop/btop.conf' is in the way of '/nix/store/b3rlbn24x03bangjcc3n2zzf6lwb46sj-home-manager-files/.config/btop/btop.conf'
+Please move the above files and try again or use 'home-manager switch -b backup' to back up existing files automatically.

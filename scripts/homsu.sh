@@ -1,5 +1,4 @@
-#! /bin/bash
-
+# shellcheck disable=SC2148
 home_gen_name="Home default"
 
 if [ $# -eq 0 ]; then

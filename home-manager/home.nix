@@ -6,9 +6,11 @@
     ./desktop/gnome.nix
     ./desktop/gtk.nix
     ./progs/kitty.nix
+    ./progs/alacritty.nix
     ./progs/vscode.nix
     ./progs/direnv.nix
     ./progs/cava.nix
+    ./progs/btop.nix
     ./progs/progs.nix
   ];
 

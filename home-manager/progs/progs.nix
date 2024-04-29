@@ -9,6 +9,8 @@
     fd.enable = true;
     chromium.enable = true;
     firefox.enable = true;
+    neovim.enable = true;
+    yt-dlp.enable = true;
 
     home-manager.enable = true;
   };

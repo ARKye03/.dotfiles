@@ -1,10 +1,8 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     # Communication
     discord
     telegram-desktop
-    whatsapp-for-linux
 
     # Productivity
     libreoffice
@@ -21,19 +19,17 @@
     # Gaming
     osu-lazer-bin
 
-    #Main-langs
+    # Langs utils
     rustup
     nil
     nixpkgs-fmt
 
-    # System Utilities
+    # System utils
     fastfetch
     uget
     tgpt
-    btop
     tldr
     libnotify
-    # unstable.unityhub
     python3
 
     # VPN Stuff

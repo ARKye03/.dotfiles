@@ -21,6 +21,12 @@
     git.enable = true;
     htop.enable = true;
     kdeconnect.enable = true;
+    nh = {
+      enable = true;
+      clean.enable = true;
+      clean.extraArgs = "--keep-since 10d --keep 3";
+      # flake = "/home/nixarkye/.dotfiles/";
+    };
   };
   users.defaultUserShell = pkgs.zsh;
 

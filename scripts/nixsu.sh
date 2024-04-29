@@ -1,5 +1,4 @@
-#! /bin/bash
-
+# shellcheck disable=SC2148
 gen_name="Default"
 
 if [ $# -eq 0 ]; then
