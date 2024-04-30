@@ -18,7 +18,7 @@ else
   echo "$gen_name" > generation
   date >> home-generation
   
-  git add configuration.nix generation
+  git add configuration.nix generation flake.nix flake.lock
   git commit -m "Nix Generation: $gen_name"
   popd || exit
 fi
