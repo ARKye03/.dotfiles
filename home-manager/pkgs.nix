@@ -24,6 +24,7 @@
     rustup
     nil
     nixpkgs-fmt
+    zed-editor
 
     # System utils
     fastfetch
