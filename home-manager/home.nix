@@ -5,16 +5,6 @@
     ./pkgs.nix
     ./desktop/gnome.nix
     ./desktop/gtk.nix
-    ./progs/kitty.nix
-    ./progs/alacritty.nix
-    ./progs/vscode.nix
-    ./progs/direnv.nix
-    ./progs/cava.nix
-    ./progs/btop.nix
-    ./progs/eza.nix
-    ./progs/fzf.nix
-    ./progs/zoxide.nix
-    ./progs/bat.nix
     ./progs/progs.nix
   ];
 

@@ -1,5 +1,17 @@
 { ... }: {
   nixpkgs.config.allowUnfree = true;
+  imports = [
+    ./terms/kitty.nix
+    ./terms/alacritty.nix
+    ./code/vscode.nix
+    ./code/direnv.nix
+    ./utils/btop.nix
+    ./utils/eza.nix
+    ./utils/fzf.nix
+    ./utils/zoxide.nix
+    ./utils/bat.nix
+    ./audio/cava.nix
+  ];
 
   programs = {
     ripgrep.enable = true;
