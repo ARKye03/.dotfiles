@@ -3,10 +3,15 @@
 let
   shellAliases = {
     ll = "ls -l";
+    lla = "ls -al";
     ns = "nix-shell";
     ndev = "nix develop";
     ne = "nix-env";
     nst = "nix-store";
+    ls = "eza --color=always --long --git --icons=always --no-time --no-user --no-permissions";
+    lsa = "eza -a --color=always --long --git --icons=always --no-time --no-user --no-permissions";
+    ptd = "pnpm tauri dev";
+    prd = "pnpm run dev";
     nixsu = "/home/nixarkye/.dotfiles/scripts/nixsu.sh";
     initshell = "/home/nixarkye/.dotfiles/scripts/InitShell.sh";
     homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
@@ -26,6 +31,8 @@ let
     gbd = "git branch -d";
     gpl = "git pull";
     gps = "git push";
+    gd = "git diff";
+    gr = "git restore";
     gplm = "git pull origin main";
     gpsm = "git push origin main";
 

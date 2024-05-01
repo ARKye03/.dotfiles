@@ -11,6 +11,7 @@
     ./progs/direnv.nix
     ./progs/cava.nix
     ./progs/btop.nix
+    ./progs/eza.nix
     ./progs/progs.nix
   ];
 
