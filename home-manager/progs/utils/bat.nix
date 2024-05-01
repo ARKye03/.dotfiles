@@ -10,5 +10,5 @@ in
     };
   };
 
-  home.file.".config/bat/themes/${theme}.tmTheme".source = ../extra/bat/Catppuccin_Mocha.tmTheme;
+  home.file.".config/bat/themes/${theme}.tmTheme".source = ../../extra/bat/Catppuccin_Mocha.tmTheme;
 }
