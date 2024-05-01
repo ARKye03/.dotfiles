@@ -31,7 +31,7 @@ let
     gbd = "git branch -d";
     gpl = "git pull";
     gps = "git push";
-    gd = "git diff";
+    gd = "git diff --name-only --relative --diff-filter=d | xargs bat --diff";
     gr = "git restore";
     gplm = "git pull origin main";
     gpsm = "git push origin main";
@@ -65,8 +65,8 @@ in
       };
       historySubstringSearch = {
         enable = true;
-        searchDownKey = "^[[B";
-        searchUpKey = "^[[A";
+        searchDownKey = "$terminfo[kcud1]";
+        searchUpKey = "$terminfo[kcuu1]";
       };
       initExtra = ''
         bindkey '^[[1;5C' forward-word  # Ctrl + Right
