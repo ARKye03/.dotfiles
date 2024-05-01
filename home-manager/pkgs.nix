@@ -27,6 +27,7 @@
     zed-editor
 
     # System utils
+    tree
     fastfetch
     uget
     tgpt
