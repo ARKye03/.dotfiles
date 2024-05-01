@@ -18,6 +18,7 @@
 
     # Gaming
     osu-lazer-bin
+    godot_4
 
     # Langs utils
     rustup
@@ -31,6 +32,7 @@
     tldr
     libnotify
     python3
+    wl-clipboard
 
     # VPN Stuff
     networkmanager-openvpn

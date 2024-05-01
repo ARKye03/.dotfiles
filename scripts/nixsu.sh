@@ -16,9 +16,9 @@ if ! (sudo nixos-rebuild switch | tee nixos-switch.log >/dev/null); then
 else
   echo "System rebuilt successfully"
   echo "$gen_name" > generation
-  date >> home-generation
+  date >> generation
   
-  git add configuration.nix generation
+  git add configuration.nix generation flake.nix flake.lock
   git commit -m "Nix Generation: $gen_name"
   popd || exit
 fi
