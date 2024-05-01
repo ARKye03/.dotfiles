@@ -12,6 +12,9 @@
     ./progs/cava.nix
     ./progs/btop.nix
     ./progs/eza.nix
+    ./progs/fzf.nix
+    ./progs/zoxide.nix
+    ./progs/bat.nix
     ./progs/progs.nix
   ];
 
@@ -20,6 +23,9 @@
     homeDirectory = "/home/nixarkye";
     stateVersion = "23.11";
     file = { };
+    sessionVariables = {
+      MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+    };
     sessionPath = [
       "${config.home.homeDirectory}/.local/bin"
       "${config.home.homeDirectory}/.cargo/bin"
