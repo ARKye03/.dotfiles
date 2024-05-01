@@ -15,6 +15,7 @@
     file = { };
     sessionVariables = {
       MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+      MANROFFOPT = "-c";
     };
     sessionPath = [
       "${config.home.homeDirectory}/.local/bin"
