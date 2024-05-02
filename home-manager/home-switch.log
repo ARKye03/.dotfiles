@@ -4,10 +4,9 @@ Activating checkLinkTargets
 Activating writeBoundary
 Activating linkGeneration
 Cleaning up orphan links from /home/nixarkye
-Creating profile generation 182
+Creating profile generation 189
 Creating home file links in /home/nixarkye
 Activating batCache
-No themes were found in '/home/nixarkye/.config/bat/themes', using the default set
 No syntaxes were found in '/home/nixarkye/.config/bat/syntaxes', using the default set.
 Writing theme set to /home/nixarkye/.cache/bat/themes.bin ... okay
 Writing syntax set to /home/nixarkye/.cache/bat/syntaxes.bin ... okay
