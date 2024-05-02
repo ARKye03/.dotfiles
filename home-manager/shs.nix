@@ -30,7 +30,7 @@ let
     gbr = "git branch";
     gbd = "git branch -d";
     gpl = "git pull";
-    gps = "git push";
+    gp = "git push";
     gd = "git diff --name-only --relative --diff-filter=d | xargs bat --diff";
     gr = "git restore";
     gplm = "git pull origin main";
