@@ -10,6 +10,7 @@
     ./utils/fzf.nix
     ./utils/zoxide.nix
     ./utils/bat.nix
+    ./utils/thefuck.nix
     ./audio/cava.nix
   ];
 

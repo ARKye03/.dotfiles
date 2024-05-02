@@ -4,7 +4,7 @@ Activating checkLinkTargets
 Activating writeBoundary
 Activating linkGeneration
 Cleaning up orphan links from /home/nixarkye
-Creating profile generation 189
+Creating profile generation 190
 Creating home file links in /home/nixarkye
 Activating batCache
 No syntaxes were found in '/home/nixarkye/.config/bat/syntaxes', using the default set.
