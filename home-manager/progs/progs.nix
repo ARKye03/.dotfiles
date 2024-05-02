@@ -1,13 +1,21 @@
 { ... }: {
   nixpkgs.config.allowUnfree = true;
+  imports = [
+    ./terms/kitty.nix
+    ./terms/alacritty.nix
+    ./code/vscode.nix
+    ./code/direnv.nix
+    ./utils/btop.nix
+    ./utils/eza.nix
+    ./utils/fzf.nix
+    ./utils/zoxide.nix
+    ./utils/bat.nix
+    ./audio/cava.nix
+  ];
 
   programs = {
-    bat.enable = true;
     ripgrep.enable = true;
-    zoxide.enable = true;
-    fzf.enable = true;
     fd.enable = true;
-    chromium.enable = true;
     firefox.enable = true;
     neovim.enable = true;
     yt-dlp.enable = true;

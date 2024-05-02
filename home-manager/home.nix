@@ -5,12 +5,6 @@
     ./pkgs.nix
     ./desktop/gnome.nix
     ./desktop/gtk.nix
-    ./progs/kitty.nix
-    ./progs/alacritty.nix
-    ./progs/vscode.nix
-    ./progs/direnv.nix
-    ./progs/cava.nix
-    ./progs/btop.nix
     ./progs/progs.nix
   ];
 
@@ -19,6 +13,10 @@
     homeDirectory = "/home/nixarkye";
     stateVersion = "23.11";
     file = { };
+    sessionVariables = {
+      MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+      MANROFFOPT = "-c";
+    };
     sessionPath = [
       "${config.home.homeDirectory}/.local/bin"
       "${config.home.homeDirectory}/.cargo/bin"

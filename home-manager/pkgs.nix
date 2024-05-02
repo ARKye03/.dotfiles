@@ -24,8 +24,10 @@
     rustup
     nil
     nixpkgs-fmt
+    zed-editor
 
     # System utils
+    tree
     fastfetch
     uget
     tgpt
