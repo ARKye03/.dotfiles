@@ -13,6 +13,7 @@
     ./utils/thefuck.nix
     ./audio/cava.nix
   ];
+  wayland.windowManager.river.enable = true;
 
   programs = {
     ripgrep.enable = true;
