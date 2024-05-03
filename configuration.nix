@@ -7,16 +7,16 @@ let
     # https://discourse.nixos.org/t/dotnet-maui-workload/20370/2
 
     postBuild = (previousAttrs.postBuild or '''') + ''
-         for i in $out/sdk/*
-         do
-           i=$(basename $i)
-           length=$(printf "%s" "$i" | wc -c)
-           substring=$(printf "%s" "$i" | cut -c 1-$(expr $length - 2))
-           i="$substring""00"
-           mkdir -p $out/metadata/workloads/''${i/-*}
-           touch $out/metadata/workloads/''${i/-*}/userlocal
-        done
-      '';
+       for i in $out/sdk/*
+       do
+         i=$(basename $i)
+         length=$(printf "%s" "$i" | wc -c)
+         substring=$(printf "%s" "$i" | cut -c 1-$(expr $length - 2))
+         i="$substring""00"
+         mkdir -p $out/metadata/workloads/''${i/-*}
+         touch $out/metadata/workloads/''${i/-*}/userlocal
+      done
+    '';
   });
 in
 {
@@ -44,8 +44,11 @@ in
     nh = {
       enable = true;
       clean.enable = true;
-      clean.extraArgs = "--keep-since 10d --keep 3";
-      # flake = "/home/nixarkye/.dotfiles/";
+    };
+    hyprland = {
+      enable = true;
+      enableXWayland = true;
+      withSystemd = true;
     };
   };
   users.defaultUserShell = pkgs.zsh;
