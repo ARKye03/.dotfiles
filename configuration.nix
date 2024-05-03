@@ -47,7 +47,7 @@ in
     };
     hyprland = {
       enable = true;
-      enableXWayland = true;
+      xwayland.enable = true;
       withSystemd = true;
     };
   };
