@@ -143,6 +143,7 @@ in
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
     DOTNET_ROOT = "${dotnet-combined}";
+    LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
   };
 
   system.stateVersion = "23.11";
