@@ -45,10 +45,10 @@ in
       enable = true;
       clean.enable = true;
     };
-    hyprland = {
-      enable = true;
-      xwayland.enable = true;
-    };
+    # hyprland = {
+    #   enable = true;
+    #   xwayland.enable = true;
+    # };
   };
   users.defaultUserShell = pkgs.zsh;
 
