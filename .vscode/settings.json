@@ -1,13 +1,36 @@
 {
     "cSpell.words": [
         "acentos",
+        "bezier",
+        "Bezier",
+        "bindm",
+        "borderangle",
         "gnumake",
+        "killactive",
+        "macchiato",
+        "MANPAGER",
+        "MANROFFOPT",
+        "movefocus",
+        "movetoworkspace",
+        "movewindow",
         "nerdfont",
         "nmap",
         "noto",
+        "popin",
+        "pseudotile",
         "quickemu",
+        "resizewindow",
+        "rgba",
         "rtkit",
+        "suppressevent",
+        "togglefloating",
+        "togglespecialworkspace",
+        "togglesplit",
+        "touchpad",
         "userlocal",
-        "virtualisation"
+        "virtualisation",
+        "waybar",
+        "windowrulev",
+        "wofi"
     ]
 }
