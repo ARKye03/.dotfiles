@@ -48,7 +48,6 @@ in
     hyprland = {
       enable = true;
       xwayland.enable = true;
-      withSystemd = true;
     };
   };
   users.defaultUserShell = pkgs.zsh;
