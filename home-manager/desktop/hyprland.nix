@@ -3,7 +3,6 @@
   programs.wofi.enable = true;
   home.packages = with pkgs; [
     copyq
-    nwg-look
   ];
 
   wayland.windowManager.hyprland = {
