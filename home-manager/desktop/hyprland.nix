@@ -1,5 +1,6 @@
 { ... }: {
   programs.waybar.enable = true;
+  programs.wofi.enable = true;
 
   wayland.windowManager.hyprland = {
     enable = true;
