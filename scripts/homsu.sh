@@ -9,7 +9,7 @@ fi
 
 pushd ~/.dotfiles/home-manager/ || exit
 
-if ! (home-manager switch --flake ../ | tee home-switch.log >/dev/null); then
+if ! (home-manager switch --flake ../); then
   echo "Error rebuilding home"
   exit 1
 else
