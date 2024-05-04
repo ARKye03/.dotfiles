@@ -1,15 +1,15 @@
-{ ... }: {
+{ pkgs, ... }: {
   programs.waybar.enable = true;
   programs.wofi.enable = true;
+  home.packages = with pkgs; [
+    copyq
+    nwg-look
+  ];
 
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       monitor = ",preferred,auto,1";
-      env = {
-        XCURSOR_SIZE = "24";
-        QT_QPA_PLATFORMTHEME = "qt5ct";
-      };
       "exec-once" = [
         "waybar"
         "nm-applet"
@@ -79,7 +79,7 @@
         "$mainMod, return, exec, kitty"
         "$mainMod, C, killactive,"
         "$mainMod, M, exit,"
-        "$mainMod, E, exec, thunar"
+        "$mainMod, E, exec, nautilus"
         "Super, Super_L, exec, wofi --conf /home/nixarkye/.config/wofi/wofi/config/config --style /home/nixarkye/.config/wofi/wofi/src/macchiato/style.css"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"

@@ -26,7 +26,6 @@
     nixpkgs-fmt
     zed-editor
 
-    copyq
     upscayl
     # System utils
     tree
