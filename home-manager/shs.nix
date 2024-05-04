@@ -8,8 +8,8 @@ let
     ndev = "nix develop";
     ne = "nix-env";
     nst = "nix-store";
-    ls = "eza --color=always --long --git --icons=always --no-time --no-user --no-permissions";
-    lsa = "eza -a --color=always --long --git --icons=always --no-time --no-user --no-permissions";
+    ls = "eza --color=always --long --git --icons=always --no-time --no-user --no-permissions --group-directories-first";
+    lsa = "eza -a --color=always --long --git --icons=always --no-time --no-user --no-permissions --group-directories-first";
     ptd = "pnpm tauri dev";
     prd = "pnpm run dev";
     nixsu = "/home/nixarkye/.dotfiles/scripts/nixsu.sh";
