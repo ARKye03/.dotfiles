@@ -2,6 +2,7 @@
   programs.waybar.enable = true;
 
   wayland.windowManager.hyprland = {
+    enable = true;
     settings = {
       monitor = ",preferred,auto,1";
       env = {
