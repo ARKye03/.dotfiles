@@ -4,7 +4,7 @@
     ./shs.nix
     ./pkgs.nix
     ./desktop/gnome.nix
-    ./desktop/hyprland.nix
+    # ./desktop/hyprland.nix
     ./desktop/gtk.nix
     ./progs/progs.nix
   ];
