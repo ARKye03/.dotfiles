@@ -26,7 +26,7 @@
     nixpkgs-fmt
     zed-editor
 
-upscayl
+    upscayl
     # System utils
     tree
     fastfetch

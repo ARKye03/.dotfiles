@@ -10,7 +10,7 @@ fi
 pushd ~/.dotfiles/ || exit
 gen_name="$(date +%d-%m-%Y_%H) ${gen_name}"
 
-if ! (sudo nixos-rebuild switch | tee nixos-switch.log >/dev/null); then
+if ! (sudo nixos-rebuild switch); then
   echo "Error rebuilding system"
   exit 1
 else
