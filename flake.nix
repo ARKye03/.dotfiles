@@ -9,25 +9,17 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/63c3a29ca82437c87573e4c6919b09a24ea61b0f";
-    updated-nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, updated-nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, ... }:
 
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        system = system;
-        overlays = [
-          (self: super: {
-            hello = (import updated-nixpkgs { system = system; }).hello;
-          })
-        ];
-      };
+      pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -40,3 +32,4 @@
       };
     };
 }
+
