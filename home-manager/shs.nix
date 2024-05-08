@@ -22,19 +22,34 @@ let
     #Git Aliases
     gc = "git clone";
     gs = "git status";
+    gss = "git status -s";
     ga = "git add";
-    gaa = "git add .";
+    gaa = "git add --all";
     gcm = "git commit -m";
     gco = "git checkout";
     gcb = "git checkout -b";
     gbr = "git branch";
     gbd = "git branch -d";
     gpl = "git pull";
+    gplr = "git pull --rebase";
     gp = "git push";
+    "gpf!" = "git push --force";
+    gf = "git fetch";
     gd = "git diff --name-only --relative --diff-filter=d | xargs bat --diff";
     gr = "git restore";
     gplm = "git pull origin main";
     gpsm = "git push origin main";
+    ggpull = "git pull origin \"$(git_current_branch)\"";
+    ggpush = "git push origin \"$(git_current_branch)\"";
+    gm = "git merge";
+    gmom = "git merge origin/$(git_main_branch)";
+    grs = "git restore";
+    gsw = "git switch";
+    gswc = "git switch -c";
+    gswm = "git switch $(git_main_branch)";
+    gswd = "git switch $(git_develop_branch)";
+    gts = "git tag -s";
+    gtv = "git tag | sort -V";
 
     #.Net Aliases
     dn = "dotnet new";
