@@ -4,30 +4,39 @@
     settings =
       {
         logo = {
-          source = "nixos_small";
           padding = {
-            right = 1;
+            top = 2;
           };
         };
         display = {
           binaryPrefix = "si";
           color = "blue";
-          separator = " <U+F178> ";
+          separator = " || ";
         };
         modules = [
-          {
-            type = "datetime";
-            key = "Date";
-            format = "{1}-{3}-{11}";
-          }
-          {
-            type = "datetime";
-            key = "Time";
-            format = "{14}:{17}:{20}";
-          }
+          "title"
+          "separator"
+          "os"
+          "host"
+          "kernel"
+          "uptime"
+          "shell"
+          "display"
+          "de"
+          "wm"
+          "theme"
+          "icons"
+          "font"
+          "cursor"
+          "terminal"
+          "cpu"
+          "gpu"
+          "memory"
+          "disk"
+          "battery"
+          "poweradapter"
           "break"
-          "player"
-          "media"
+          "colors"
         ];
       };
   };
