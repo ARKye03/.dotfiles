@@ -37,7 +37,6 @@
       };
       homeConfigurations."nixarkye" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        inherit overlay-unstable;
         modules = [
           ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; })
           ./home-manager/home.nix
