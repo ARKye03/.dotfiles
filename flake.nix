@@ -27,7 +27,13 @@
           inherit system;
           config.allowUnfree = true;
         };
-
+      };
+      shell = pkgs.mkShell {
+        nativeBuildInputs = with pkgs.buildPackages; [ hello ];
+        shellHook = ''
+          export git_main_branch="trunk"
+          export git_develop_branch="DevelopmentTrunk"
+        '';
       };
     in
     {
@@ -42,6 +48,7 @@
           ./home-manager/home.nix
         ];
       };
+      devShell.${system} = shell;
     };
 }
 
