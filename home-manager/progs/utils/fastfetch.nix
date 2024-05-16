@@ -11,7 +11,7 @@
         display = {
           binaryPrefix = "si";
           color = "blue";
-          separator = " || ";
+          separator = ": ";
         };
         modules = [
           "title"
