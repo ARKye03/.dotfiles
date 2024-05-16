@@ -15,6 +15,7 @@
     celluloid
     vlc
     geogebra
+    upscayl
 
     # Gaming
     osu-lazer-bin
@@ -25,16 +26,14 @@
     nil
     nixpkgs-fmt
     zed-editor
+    python3
 
-    upscayl
     # System utils
     tree
-    fastfetch
     uget
     tgpt
     tldr
     libnotify
-    python3
     wl-clipboard
 
     # VPN Stuff
