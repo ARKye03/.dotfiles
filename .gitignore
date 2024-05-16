@@ -13,3 +13,5 @@
 *.vsix
 
 hardware-configuration.nix
+.envrc
+.direnv
