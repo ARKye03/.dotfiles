@@ -25,7 +25,7 @@
     rustup
     nil
     nixpkgs-fmt
-    zed-editor
+    unstable.zed-editor
     python3
 
     # System utils
