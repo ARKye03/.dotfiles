@@ -11,6 +11,7 @@
     ./utils/zoxide.nix
     ./utils/bat.nix
     ./utils/thefuck.nix
+    ./utils/fastfetch.nix
     ./audio/cava.nix
   ];
 

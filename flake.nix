@@ -8,18 +8,33 @@
 #                              |___/      
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/63c3a29ca82437c87573e4c6919b09a24ea61b0f";
+    nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, nixpkgs-unstable, home-manager, ... }:
 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      overlay-unstable = final: prev: {
+        unstable = import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      };
+      shell = pkgs.mkShell {
+        nativeBuildInputs = with pkgs.buildPackages; [ hello ];
+        shellHook = ''
+          export git_main_branch="trunk"
+          export git_develop_branch="DevelopmentTrunk"
+        '';
+      };
     in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -28,8 +43,12 @@
       };
       homeConfigurations."nixarkye" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home-manager/home.nix ];
+        modules = [
+          ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; })
+          ./home-manager/home.nix
+        ];
       };
+      devShell.${system} = shell;
     };
 }
 
