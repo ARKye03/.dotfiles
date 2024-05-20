@@ -35,7 +35,6 @@ let
     gp = "git push";
     "gpf!" = "git push --force";
     gf = "git fetch";
-    gd = "git diff --name-only --relative --diff-filter=d | xargs bat --diff";
     gr = "git restore";
     gplm = "git pull origin main";
     gpsm = "git push origin main";
@@ -63,6 +62,11 @@ let
     dp = "dotnet pack";
     dng = "dotnet nuget";
     db = "dotnet build";
+
+    # Make Aliases
+    mr = "make run";
+    mp = "make prune";
+    mc = "make create";
   };
 in
 {
@@ -84,10 +88,22 @@ in
         searchUpKey = "$terminfo[kcuu1]";
       };
       initExtra = ''
+          #ZStyles Completions
+          zstyle ':completion:*' verbose true
+          zstyle ':completion:*:*:*:*:*' menu select
+          zstyle ':completion:*' matcher-list '\' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
         bindkey '^[[1;5C' forward-word  # Ctrl + Right
         bindkey '^[[1;5D' backward-word  # Ctrl + Left
         bindkey '^H' backward-kill-word # Ctrl + Backspace
         bindkey "^L" clear-screen # Ctrl + L
+
+        function git_current_branch() {
+          git branch --show-current
+        }
+        function gd() {
+          git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
+        }
 
         # pnpm
         export PNPM_HOME="/home/archkye/.local/share/pnpm"
