@@ -29,10 +29,9 @@
         };
       };
       shell = pkgs.mkShell {
-        nativeBuildInputs = with pkgs.buildPackages; [ hello ];
+        nativeBuildInputs = with pkgs.buildPackages; [ shfmt ];
         shellHook = ''
-          export git_main_branch="trunk"
-          export git_develop_branch="DevelopmentTrunk"
+          export MAIN_FLAKE="$HOME/.dotfiles/"
         '';
       };
     in
