@@ -16,8 +16,10 @@ $php\
 \n$character"""
 
 right_format = """
+[](bg:#a3aed2 fg:#090c0c)\
 $time\
-$nix_shell\
+$direnv\
+[▓▒░](#a3aed2)\
 """
 
 [directory]
@@ -61,12 +63,8 @@ symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
-[nix_shell]
-disabled = true
-impure_msg = '[impure shell](bold red)'
-pure_msg = '[pure shell](bold green)'
-unknown_msg = '[unknown shell](bold yellow)'
-format = 'via [☃️ $state( \($name\))](bold blue) '
+[direnv]
+disabled = false
 
 [time]
 disabled = false
