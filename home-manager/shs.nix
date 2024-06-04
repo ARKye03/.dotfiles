@@ -88,9 +88,11 @@ in
         searchUpKey = "$terminfo[kcuu1]";
       };
       initExtra = ''
-          #ZStyles Completions
-          zstyle ':completion:*' verbose true
-          zstyle ':completion:*:*:*:*:*' menu select
+        #ZStyles Completions
+        zstyle ':completion:*' verbose true
+        zstyle ':completion:*:*:*:*:*' menu select
+
+        ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
         bindkey '^[[1;5C' forward-word  # Ctrl + Right
         bindkey '^[[1;5D' backward-word  # Ctrl + Left
