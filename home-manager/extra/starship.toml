@@ -13,6 +13,7 @@ $golang\
 $php\
 [](fg:#212736 bg:#1d2230)\
 $time\
+$nix_shell\
 [ ](fg:#1d2230)\
 \n$character"""
 
@@ -56,6 +57,13 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[nix_shell]
+disabled = true
+impure_msg = '[impure shell](bold red)'
+pure_msg = '[pure shell](bold green)'
+unknown_msg = '[unknown shell](bold yellow)'
+format = 'via [☃️ $state( \($name\))](bold blue) '
 
 [time]
 disabled = false
