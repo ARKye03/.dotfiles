@@ -68,7 +68,7 @@ disabled = false
 loaded_msg = " "
 allowed_msg = ""
 unloaded_msg = " "
-style = "[](bg:#394260 fg:#769ff0)"
+style = "bg:#769ff0"
 
 
 [time]
