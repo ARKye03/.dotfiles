@@ -19,8 +19,8 @@ right_format = """
 [](fg:#1d2230)\
 [](bg:#1d2230 fg:#212736)\
 $time\
-[ ](bg:#394260 fg:#769ff0)\
-$direnv\
+[](bg:#394260 fg:#769ff0)\
+$direnv
 """
 
 [directory]
@@ -74,5 +74,5 @@ style = "bg:#769ff0"
 [time]
 disabled = false
 time_format = "%R"                                      # Hour:Minute Format
-style = "bg:#1d2230"
+style = "bg:#212736"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
