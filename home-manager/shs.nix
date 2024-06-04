@@ -123,7 +123,7 @@ in
     starship = {
       enable = true;
       # Configuration written to ~/.config/starship.toml
-      settings = pkgs.lib.importTOML ./extra/starship.toml;
+      settings = pkgs.lib.importTOML ./extra/mocha.toml;
     };
   };
 }
