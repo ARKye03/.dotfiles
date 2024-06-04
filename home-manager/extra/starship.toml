@@ -21,8 +21,6 @@ right_format = """
 $time\
 [ ](bg:#394260 fg:#769ff0)\
 $direnv\
-[](bg:#769ff0 fg:#a3aed2)\
-[▓▒░](#a3aed2)\
 """
 
 [directory]
@@ -71,7 +69,7 @@ disabled = false
 loaded_msg = " "
 allowed_msg = ""
 unloaded_msg = " "
-style = "bg:#394260"
+style = "bg:#769ff0"
 
 [time]
 disabled = false
