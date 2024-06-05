@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     # Communication
-    # discord
+    discord
     telegram-desktop
 
     # Productivity
@@ -14,12 +14,12 @@
     # Media
     celluloid
     vlc
-    # geogebra
-    # upscayl
+    geogebra
+    upscayl
 
     # Gaming
     # osu-lazer-bin
-    # godot_4
+    godot_4
 
     # Langs utils
     rustup
