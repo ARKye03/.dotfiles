@@ -8,12 +8,7 @@ else
   home_gen_name = arg[1]
 end
 
-os.execute("pwd")
-os.execute("cd " .. os.getenv("HOME") .. "/.dotfiles/home-manager/")
-print("The Dir is:")
-os.execute("pwd")
-
-local handle = io.popen("home-manager switch --flake ../")
+local handle = io.popen("cd " .. os.getenv("HOME") .. "/.dotfiles/home-manager/ && home-manager switch --flake ../")
 if handle then
   local result = handle:read("*a")
   handle:close()
