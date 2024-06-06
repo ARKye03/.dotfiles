@@ -28,7 +28,8 @@ if handle then
     else
       print("Error: Failed to open file")
     end
-
+    print("The Dir is:")
+    os.execute("pwd")
     os.execute("git add .")
     os.execute("git commit -m 'Home Generation: " .. home_gen_name .. "'")
     os.execute("cd ..")
