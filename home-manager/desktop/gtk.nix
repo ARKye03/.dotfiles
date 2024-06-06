@@ -4,17 +4,17 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Mocha-Standard-Mauve-Dark";
+      name = "Catppuccin-Mocha-Standard-Macchiato-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "mauve" ];
         size = "standard";
         tweaks = [ "rimless" ];
-        variant = "mocha";
+        variant = "macchiato";
       };
     };
     cursorTheme = {
-      package = pkgs.catppuccin-cursors.mochaDark;
-      name = "Catppuccin-Mocha-Dark-Cursors";
+      package = pkgs.catppuccin-cursors.macchiatoDark;
+      name = "Catppuccin-Macchiato-Dark-Cursors";
     };
     iconTheme = {
       name = "Colloid-purple-dark";
