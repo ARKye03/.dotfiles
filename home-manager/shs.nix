@@ -17,7 +17,8 @@ let
     homsu = "/home/nixarkye/.dotfiles/scripts/homsu.sh";
     homre = "home-manager switch --option substitute false";
     lvnix = "lvim /home/nixarkye/.dotfiles";
-    codenix = "code /home/nixarkye/.dotfiles";
+    codenix = "code ~/.dotfiles";
+    zdots = "z ~/.dotfiles";
 
     #Git Aliases
     gc = "git clone";
