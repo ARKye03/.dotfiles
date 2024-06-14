@@ -32,16 +32,30 @@
             "type" = "uptime";
             "key" = " ";
           }
-
           {
             "type" = "shell";
             "key" = "󱆃 ";
           }
-          "display"
-          "de"
-          "wm"
-          "theme"
-          "icons"
+          {
+            "type" = "display";
+            "key" = " ";
+          }
+          {
+            "type" = "desktop";
+            "key" = " ";
+          }
+          {
+            "type" = "wm";
+            "key" = " ";
+          }
+          {
+            "type" = "theme";
+            "key" = "󰔎 ";
+          }
+          {
+            "type" = "icon";
+            "key" = " ";
+          }
           {
             "type" = "font";
             "key" = " ";
@@ -66,8 +80,11 @@
             "type" = "memory";
             "key" = "󰍛 ";
           }
-          "memory"
           "disk"
+          {
+            "type" = "disk";
+            "key" = " ";
+          }
           {
             "type" = "battery";
             "key" = "󱈑 ";
