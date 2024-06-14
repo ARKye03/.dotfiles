@@ -16,7 +16,10 @@
         modules = [
           "title"
           "separator"
-          "os"
+          {
+            "type" = "os";
+            "key" = " ";
+          }
           "host"
           "kernel"
           "uptime"
