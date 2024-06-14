@@ -20,23 +20,58 @@
             "type" = "os";
             "key" = " ";
           }
-          "host"
-          "kernel"
-          "uptime"
-          "shell"
+          {
+            "type" = "host";
+            "key" = " ";
+          }
+          {
+            "type" = "kernel";
+            "key" = " ";
+          }
+          {
+            "type" = "uptime";
+            "key" = " ";
+          }
+
+          {
+            "type" = "shell";
+            "key" = "󱆃 ";
+          }
           "display"
           "de"
           "wm"
           "theme"
           "icons"
-          "font"
-          "cursor"
-          "terminal"
-          "cpu"
-          "gpu"
+          {
+            "type" = "font";
+            "key" = " ";
+          }
+          {
+            "type" = "cursor";
+            "key" = "󰇀 ";
+          }
+          {
+            "type" = "terminal";
+            "key" = " ";
+          }
+          {
+            "type" = "cpu";
+            "key" = " ";
+          }
+          {
+            "type" = "gpu";
+            "key" = " ";
+          }
+          {
+            "type" = "memory";
+            "key" = "󰍛 ";
+          }
           "memory"
           "disk"
-          "battery"
+          {
+            "type" = "battery";
+            "key" = "󱈑 ";
+          }
           "poweradapter"
           "break"
           "colors"
