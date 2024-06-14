@@ -41,7 +41,7 @@
             "key" = " ";
           }
           {
-            "type" = "desktop";
+            "type" = "de";
             "key" = " ";
           }
           {
@@ -53,7 +53,7 @@
             "key" = "󰔎 ";
           }
           {
-            "type" = "icon";
+            "type" = "icons";
             "key" = " ";
           }
           {
