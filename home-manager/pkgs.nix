@@ -23,12 +23,8 @@
 
     # Langs utils
     rustup
-    nil
-    nixpkgs-fmt
     unstable.zed-editor
     python3
-    lua
-    luaPackages.luafilesystem
 
     # System utils
     tree
