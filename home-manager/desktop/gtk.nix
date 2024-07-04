@@ -25,11 +25,11 @@
       };
     };
   };
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-    accent = "mauve";
-  };
+  # catppuccin = {
+  #   enable = true;
+  #   flavor = "mocha";
+  #   accent = "mauve";
+  # };
   
   # Now symlink the `~/.config/gtk-4.0/` folder declaratively:
   # home.file = {
