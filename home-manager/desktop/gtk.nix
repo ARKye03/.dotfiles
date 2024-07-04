@@ -6,7 +6,7 @@
      theme = {
       #  name = "Catppuccin-mocha-standard-mauve-dark";
        name = "catppuccin-mocha-mauve-standard+rimless"; 
-        package = pkgs.catppuccin-gtk.override {
+        package = pkgs.unstable.catppuccin-gtk.override {
           accents = [ "mauve" ];
           size = "standard";
           tweaks = [ "rimless" ];
@@ -14,8 +14,8 @@
         };
      };
      cursorTheme = {
-       package = pkgs.catppuccin-cursors.mochaDark;
-       name = "Catppuccin-mocha-dark-cursors";
+       package = pkgs.unstable.catppuccin-cursors.mochaDark;
+       name = "catppuccin-mocha-dark-cursors";
      };
     iconTheme = {
       name = "Colloid-purple-dark";
