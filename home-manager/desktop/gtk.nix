@@ -3,20 +3,19 @@
 }: {
   gtk = {
     enable = true;
-    catppuccin.enable = true;
-    # theme = {
-    #   name = "Catppuccin-mocha-standard-mauve-dark";
-    #   package = pkgs.catppuccin-gtk.override {
-    #     accents = [ "mauve" ];
-    #     size = "standard";
-    #     tweaks = [ "rimless" ];
-    #     variant = "mocha";
-    #   };
-    # };
-    # cursorTheme = {
-    #   package = pkgs.catppuccin-cursors.mochaDark;
-    #   name = "Catppuccin-mocha-dark-cursors";
-    # };
+     theme = {
+       name = "Catppuccin-mocha-standard-mauve-dark";
+      #  package = pkgs.catppuccin-gtk.override {
+      #    accents = [ "mauve" ];
+      #    size = "standard";
+      #    tweaks = [ "rimless" ];
+      #    variant = "mocha";
+      #  };
+     };
+     cursorTheme = {
+       package = pkgs.catppuccin-cursors.mochaDark;
+       name = "Catppuccin-mocha-dark-cursors";
+     };
     iconTheme = {
       name = "Colloid-purple-dark";
       package = pkgs.colloid-icon-theme.override {
