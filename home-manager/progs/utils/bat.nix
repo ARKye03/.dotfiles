@@ -5,10 +5,10 @@ in
 {
   programs.bat = {
     enable = true;
-    config = {
-      theme = theme;
-    };
+    # config = {
+    #   theme = theme;
+    # };
   };
 
-  home.file.".config/bat/themes/${theme}.tmTheme".source = ../../extra/bat/Catppuccin_Mocha.tmTheme;
+  # home.file.".config/bat/themes/${theme}.tmTheme".source = ../../extra/bat/Catppuccin_Mocha.tmTheme;
 }
