@@ -11,7 +11,7 @@ in
     enable = true;
     settings = {
       "org/gnome/shell/extensions/user-theme" = {
-        name = "Catppuccin-mocha-standard-mauve-dark";
+        name = "catppuccin-mocha-standard-mauve-dark";
       };
     };
   };
