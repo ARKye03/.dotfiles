@@ -5,7 +5,7 @@
     enable = true;
      theme = {
       #  name = "Catppuccin-mocha-standard-mauve-dark";
-       name = "Catppuccin-mocha-mauve-standard+rimless"; 
+       name = "catppuccin-mocha-mauve-standard+rimless"; 
         package = pkgs.catppuccin-gtk.override {
           accents = [ "mauve" ];
           size = "standard";
