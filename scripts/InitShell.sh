@@ -3,8 +3,8 @@
 if [ -f flake.nix ]; then
   exit 0
 else
-  
-cat <<EOF > flake.nix
+
+  cat <<EOF >flake.nix
 {
   description = "my project description";
 
@@ -15,8 +15,12 @@ cat <<EOF > flake.nix
       (system:
         let
           pkgs = nixpkgs.legacyPackages.\${system};
+          nix-utils = with pkgs; [
+            nil
+            nixpkgs-fmt
+          ];
           shell = pkgs.mkShell {
-            nativeBuildInputs = with pkgs.buildPackages; [ $@ ];
+            nativeBuildInputs = with pkgs.buildPackages; [ $@ ] ++ nix-utils;
           };
         in
         {

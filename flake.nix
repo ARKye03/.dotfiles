@@ -29,7 +29,11 @@
         };
       };
       shell = pkgs.mkShell {
-        nativeBuildInputs = with pkgs.buildPackages; [ shfmt ];
+        nativeBuildInputs = with pkgs.buildPackages; [ 
+        shfmt 
+        nil
+        nixpkgs-fmt
+        ];
         shellHook = ''
           export MAIN_FLAKE="$HOME/.dotfiles/"
         '';

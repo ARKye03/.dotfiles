@@ -19,6 +19,14 @@ let
     lvnix = "lvim /home/nixarkye/.dotfiles";
     codenix = "code ~/.dotfiles";
     zdots = "z ~/.dotfiles";
+    
+    # Cargo Aliases
+    cg = "cargo";
+    cgr = "cargo run";
+    cgb = "cargo build";
+    cgbr = "cargo build --release";
+    cgc = "cargo check";
+    cgcl = "cargo clean";
 
     #Git Aliases
     gc = "git clone";
