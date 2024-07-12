@@ -10,6 +10,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+    pinned-nixpkgs.url = "nixpkgs/706eef542dec88cc0ed25b9075d3037564b2d164";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
@@ -17,13 +18,19 @@
     };
   };
 
-  outputs = { nixpkgs, nixpkgs-unstable, home-manager, ... }:
+  outputs = { nixpkgs, nixpkgs-unstable, pinned-nixpkgs, home-manager, ... }:
 
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       overlay-unstable = final: prev: {
         unstable = import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      };
+      overlay-pinned = final: prev: {
+        pinned = import pinned-nixpkgs {
           inherit system;
           config.allowUnfree = true;
         };
@@ -47,7 +54,7 @@
       homeConfigurations."nixarkye" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; })
+          ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable overlay-pinned ]; })
           ./home-manager/home.nix
         ];
       };
