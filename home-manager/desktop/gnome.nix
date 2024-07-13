@@ -11,8 +11,8 @@ in
     enable = true;
     settings = {
       "org/gnome/shell/extensions/user-theme" = {
-        name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-      };
+        name = "catppuccin-mocha-mauve-standard+rimless"; 
+        };
     };
   };
   home.packages = with pkgs.gnomeExtensions; [
