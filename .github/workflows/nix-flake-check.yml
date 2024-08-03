@@ -1,48 +1,48 @@
-on:
-  pull_request:
-    branches: [trunk]
-  push:
-    branches: [trunk]
-  schedule:
-    - cron: '0 0 * * *'  # Run this workflow every day at 17:00
+# on:
+#   pull_request:
+#     branches: [trunk]
+#   push:
+#     branches: [trunk]
+#   schedule:
+#     - cron: '0 0 * * *'  # Run this workflow every day at 17:00
 
-jobs:
-  merge:
-    name: Merge DevelopmentTrunk into trunk
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          ref: trunk
-          fetch-depth: 0  # Fetch all history so we can push to trunk
+# jobs:
+#   merge:
+#     name: Merge DevelopmentTrunk into trunk
+#     if: github.event_name == 'schedule'
+#     runs-on: ubuntu-22.04
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+#         with:
+#           ref: trunk
+#           fetch-depth: 0  # Fetch all history so we can push to trunk
 
-      - name: Configure Git
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+#       - name: Configure Git
+#         run: |
+#           git config user.name "GitHub Actions"
+#           git config user.email "actions@github.com"
 
-      - name: Merge DevelopmentTrunk into trunk
-        run: |
-          git fetch origin DevelopmentTrunk
-          git merge --no-ff --no-edit origin/DevelopmentTrunk
-          git push
+#       - name: Merge DevelopmentTrunk into trunk
+#         run: |
+#           git fetch origin DevelopmentTrunk
+#           git merge --no-ff --no-edit origin/DevelopmentTrunk
+#           git push
 
-  build:
-    name: Build Nix targets
-    needs: merge
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: Nix Flake Checker
-        uses: DeterminateSystems/flake-checker-action@v5
-        with:
-          flake-lock-path: ./flake.lock
-          check-outdated: true
-          check-owner: true
-          check-supported: true
-          nixpkgs-keys: nixpkgs
-          ignore-missing-flake-lock: false
-          fail-mode: true
-          send-statistics: true
+#   build:
+#     name: Build Nix targets
+#     needs: merge
+#     runs-on: ubuntu-22.04
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Nix Flake Checker
+#         uses: DeterminateSystems/flake-checker-action@v5
+#         with:
+#           flake-lock-path: ./flake.lock
+#           check-outdated: true
+#           check-owner: true
+#           check-supported: true
+#           nixpkgs-keys: nixpkgs
+#           ignore-missing-flake-lock: false
+#           fail-mode: true
+#           send-statistics: true
