@@ -1,3 +1,7 @@
+# End of Life
+
+You need to sacrifice too much for NixOS to offer that little
+
 # Nixarkye's Dotfiles
 
 This repository contains my personal dotfiles. They are managed by [Home Manager](https://github.com/nix-community/home-manager) and [Nix Flakes](https://nixos.wiki/wiki/Flakes).
